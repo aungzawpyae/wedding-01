@@ -34,6 +34,55 @@
       </div>
     </section>
 
+    <!-- Event Details Section -->
+    <section class="event-section">
+      <div class="event-container">
+        <h2 class="section-title">အခမ်းအနားအချိန်နှင့်နေရာ</h2>
+        <p class="section-subtitle">Event Details</p>
+
+        <div class="event-details">
+          <div class="event-item">
+            <div class="event-icon">📅</div>
+            <div class="event-info">
+              <h3>ရက်စွဲ</h3>
+              <p>၁၃၈၅-ခု၊ တပို့တွဲလပြည့်ကျော်(၁၁)ရက်</p>
+              <p>12-02-2026 (ကြာသပတေးနေ့)</p>
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-icon">🕐</div>
+            <div class="event-info">
+              <h3>အချိန်</h3>
+              <p>နံနက် (၇:၀၀) နာရီမှ (၁၀:၀၀) နာရီထိ</p>
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-icon">📍</div>
+            <div class="event-info">
+              <h3>နေရာ</h3>
+              <p>မုံရွာမြို့၊ ချမ်းမြဝတီရပ်ကွက်၊</p>
+              <p>ဗန္ဓုလလမ်း (ဆည်မြောင်ရုံးလမ်း) နှင့် အနော်ရထားလမ်း (ရေကူးကန်လမ်း) ထောင့်၊</p>
+              <p>ဗိုလ်မှူးသန်းမြင့် (ငြိမ်း) နေအိမ်</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59914.23376991547!2d95.10697379260115!3d22.106599035298093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ca98d563cb266b%3A0x56b860fde1c4e9ca!2sMonywa%2C%20Myanmar%20(Burma)!5e1!3m2!1sen!2ssg!4v1770215373834!5m2!1sen!2ssg"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- Photo Gallery Section -->
     <section class="gallery-section">
       <div class="gallery-container">
@@ -44,7 +93,10 @@
             <img src="/image/1.jpg" alt="Wedding Photo 1" />
           </div>
           <div class="gallery-item">
-            <img src="/image/3.jpg" alt="Wedding Photo 2" />
+            <img src="/image/2.jpg" alt="Wedding Photo 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="/image/3.jpg" alt="Wedding Photo 3" />
           </div>
         </div>
       </div>
@@ -229,6 +281,64 @@ html, body {
   border-radius: 4px;
 }
 
+/* Event Details Section */
+.event-section {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.event-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.event-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  text-align: left;
+  background: linear-gradient(135deg, #f8f6f2 0%, #ede8e0 100%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.event-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.event-info h3 {
+  font-size: 1.1rem;
+  color: #8b7355;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.event-info p {
+  font-size: 0.95rem;
+  color: #5a5a5a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.event-map {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.event-map iframe {
+  display: block;
+}
+
 /* Photo Gallery Section */
 .gallery-section {
   background: #fff;
@@ -318,6 +428,30 @@ html, body {
     padding: 20px;
   }
 
+  .event-section {
+    padding: 80px 40px;
+  }
+
+  .event-item {
+    padding: 25px;
+  }
+
+  .event-icon {
+    font-size: 2rem;
+  }
+
+  .event-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .event-info p {
+    font-size: 1rem;
+  }
+
+  .event-map iframe {
+    height: 350px;
+  }
+
   .gallery-section {
     padding: 80px 40px;
   }
@@ -364,6 +498,26 @@ html, body {
 
   .invitation-section {
     padding: 100px 40px;
+  }
+
+  .event-section {
+    padding: 100px 40px;
+  }
+
+  .event-details {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .event-item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .event-map iframe {
+    height: 400px;
   }
 
   .gallery-section {
