@@ -5,7 +5,7 @@
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="invitation-text">Wedding Invitation</p>
-        <h1 class="couple-names">Min Khan Kyi & Yin Thway Htun</h1>
+        <h1 class="couple-names">Dr Min Khan Kyi & Yin Thway Htun</h1>
         <div class="divider"></div>
         <p class="tagline">We're getting married</p>
         <p class="date">1st February 2026</p>
@@ -22,12 +22,28 @@
         </div>
       </div>
     </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <h2 class="section-title">ဓာတ်ပုံများ</h2>
+        <p class="section-subtitle">Photo Gallery</p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/image/1.jpg" alt="Wedding Photo 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="/image/3.jpg" alt="Wedding Photo 2" />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup lang="ts">
 useHead({
-  title: 'Wedding Invitation - Min Khan Kyi & Yin Thway Htun',
+  title: 'Wedding Invitation - Dr Min Khan Kyi & Yin Thway Htun',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ]
@@ -167,6 +183,41 @@ html, body {
   border-radius: 4px;
 }
 
+/* Photo Gallery Section */
+.gallery-section {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.02);
+}
+
 /* Mobile First - Default styles above are for mobile */
 
 /* Tablet and up */
@@ -203,6 +254,15 @@ html, body {
   .invitation-card {
     padding: 20px;
   }
+
+  .gallery-section {
+    padding: 80px 40px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
 }
 
 /* Desktop */
@@ -225,6 +285,14 @@ html, body {
 
   .invitation-section {
     padding: 100px 40px;
+  }
+
+  .gallery-section {
+    padding: 100px 40px;
+  }
+
+  .gallery-grid {
+    gap: 30px;
   }
 }
 </style>
