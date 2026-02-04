@@ -505,15 +505,13 @@ html, body {
   }
 
   .event-details {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
 
-  .event-item {
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
+  .event-item:last-child {
+    grid-column: 1 / -1;
   }
 
   .event-map iframe {
