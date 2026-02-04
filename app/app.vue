@@ -267,6 +267,10 @@ html, body {
 
 /* Desktop */
 @media (min-width: 1024px) {
+  .hero {
+    background-image: url('/image/desktop-bg.png');
+  }
+
   .couple-names {
     font-size: 4rem;
   }
