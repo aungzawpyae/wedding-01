@@ -71,7 +71,7 @@ html, body {
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background-image: url('/image/2.jpg');
+  background-image: url('/image/mobile-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
