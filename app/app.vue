@@ -6,6 +6,17 @@
       <div class="hero-content">
         <p class="invitation-text">Wedding Invitation</p>
         <h1 class="couple-names">Dr Min Khan Kyi & Yin Thway Htun</h1>
+        <div class="couple-details">
+          <div class="person-info">
+            <span class="degree">(BVSc)</span>
+            <span class="company">Sunjin Myanmar Co.,Ltd</span>
+          </div>
+          <span class="separator">&</span>
+          <div class="person-info">
+            <span class="degree">(BVSc)</span>
+            <span class="company">Sunjin Myanmar Co.,Ltd</span>
+          </div>
+        </div>
         <div class="divider"></div>
         <p class="tagline">We're getting married</p>
         <p class="date">1st February 2026</p>
@@ -115,8 +126,42 @@ html, body {
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #d4af37;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.couple-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.degree {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.company {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.couple-details .separator {
+  color: #d4af37;
+  font-size: 1rem;
 }
 
 .divider {
@@ -231,6 +276,21 @@ html, body {
     font-size: 3.5rem;
   }
 
+  .couple-details {
+    flex-direction: row;
+    gap: 20px;
+    font-size: 0.95rem;
+  }
+
+  .person-info {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .company {
+    font-size: 0.9rem;
+  }
+
   .tagline {
     font-size: 1.3rem;
   }
@@ -273,6 +333,15 @@ html, body {
 
   .couple-names {
     font-size: 4rem;
+  }
+
+  .couple-details {
+    font-size: 1.05rem;
+    gap: 30px;
+  }
+
+  .company {
+    font-size: 1rem;
   }
 
   .invitation-text {
