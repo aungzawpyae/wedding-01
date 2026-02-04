@@ -5,21 +5,21 @@
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="invitation-text">Wedding Invitation</p>
-        <h1 class="couple-names">Dr Min Khan Kyi & Yin Thway Htun</h1>
-        <div class="couple-details">
-          <div class="person-info">
+        <div class="couple-names">
+          <div class="person">
+            <span class="name">Min Khan Kyi</span>
             <span class="degree">(BVSc)</span>
-            <span class="company">Sunjin Myanmar Co.,Ltd</span>
           </div>
-          <span class="separator">&</span>
-          <div class="person-info">
+          <span class="amp">&</span>
+          <div class="person">
+            <span class="name">Yin Thway Htun</span>
             <span class="degree">(BVSc)</span>
-            <span class="company">Sunjin Myanmar Co.,Ltd</span>
           </div>
         </div>
+        <div class="couple-company">Sunjin Myanmar Co.,Ltd</div>
         <div class="divider"></div>
         <p class="tagline">We're getting married</p>
-        <p class="date">1st February 2026</p>
+        <p class="date">12-02-2026 (Friday)</p>
       </div>
     </section>
 
@@ -123,45 +123,46 @@ html, body {
 }
 
 .couple-names {
-  font-size: 2.2rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  color: #d4af37;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.couple-details {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.person {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.person .name {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #d4af37;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.person .degree {
+  font-size: 1rem;
+  font-weight: 300;
   color: #fff;
-  font-size: 0.85rem;
   opacity: 0.9;
 }
 
-.person-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
+.amp {
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0.8;
 }
 
-.degree {
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.company {
-  font-size: 0.8rem;
+.couple-company {
+  font-size: 0.9rem;
+  color: #fff;
   opacity: 0.85;
-}
-
-.couple-details .separator {
-  color: #d4af37;
-  font-size: 1rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .divider {
@@ -273,22 +274,24 @@ html, body {
   }
 
   .couple-names {
-    font-size: 3.5rem;
-  }
-
-  .couple-details {
     flex-direction: row;
     gap: 20px;
-    font-size: 0.95rem;
   }
 
-  .person-info {
-    flex-direction: row;
-    gap: 8px;
+  .person .name {
+    font-size: 2.5rem;
   }
 
-  .company {
-    font-size: 0.9rem;
+  .person .degree {
+    font-size: 1.1rem;
+  }
+
+  .amp {
+    font-size: 1.5rem;
+  }
+
+  .couple-company {
+    font-size: 1rem;
   }
 
   .tagline {
@@ -331,17 +334,20 @@ html, body {
     background-image: url('/image/desktop-bg.png');
   }
 
-  .couple-names {
-    font-size: 4rem;
+  .person .name {
+    font-size: 3rem;
   }
 
-  .couple-details {
-    font-size: 1.05rem;
-    gap: 30px;
+  .person .degree {
+    font-size: 1.2rem;
   }
 
-  .company {
-    font-size: 1rem;
+  .amp {
+    font-size: 1.8rem;
+  }
+
+  .couple-company {
+    font-size: 1.1rem;
   }
 
   .invitation-text {
