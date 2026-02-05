@@ -26,11 +26,18 @@
       <div class="invitation-container">
         <h2 class="section-title">ဖိတ်ကြားလွှာ</h2>
         <p class="section-subtitle">Invitation Card</p>
-        <div class="invitation-card">
+        <div class="invitation-card" @click="showLightbox = true">
           <img src="/image/w01.jpg" alt="Myanmar Wedding Invitation Card" />
+          <div class="click-hint">Click to view</div>
         </div>
       </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div v-if="showLightbox" class="lightbox" @click="showLightbox = false">
+      <button class="lightbox-close">&times;</button>
+      <img src="/image/w01.jpg" alt="Myanmar Wedding Invitation Card" @click.stop />
+    </div>
 
     <!-- Event Details Section -->
     <section class="event-section">
@@ -103,10 +110,15 @@
 </template>
 
 <script setup lang="ts">
+const showLightbox = ref(false)
+
 useHead({
   title: 'Wedding Invitation - Dr Min Khan Kyi & Yin Thway Htun',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+  ],
+  link: [
+    { rel: 'icon', type: 'image/jpeg', href: '/image/1.jpg' }
   ]
 })
 </script>
@@ -270,6 +282,14 @@ html, body {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.invitation-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
 }
 
 .invitation-card img {
@@ -277,6 +297,66 @@ html, body {
   height: auto;
   display: block;
   border-radius: 4px;
+}
+
+.click-hint {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.invitation-card:hover .click-hint {
+  opacity: 1;
+}
+
+/* Lightbox Modal */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-close:hover {
+  opacity: 1;
 }
 
 /* Event Details Section */
