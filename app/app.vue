@@ -17,7 +17,7 @@
         <div class="couple-company">Sunjin Myanmar Co.,Ltd</div>
         <div class="divider"></div>
         <p class="tagline">We're getting married</p>
-        <p class="date">22.2.26 (Sunday)</p>
+        <p class="date">22.2.2026 (Sunday)</p>
       </div>
     </section>
 
@@ -144,7 +144,7 @@ html, body {
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background-image: url('/image/mobile-bg.png');
+  background-image: url('/image/2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
