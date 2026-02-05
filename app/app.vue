@@ -7,19 +7,17 @@
         <p class="invitation-text">Wedding Invitation</p>
         <div class="couple-names">
           <div class="person">
-            <span class="name">Min Khan Kyi</span>
-            <span class="degree">(BVSc)</span>
+            <span class="name">Dr.Min Khant Kyi </span>
           </div>
           <span class="amp">&</span>
           <div class="person">
-            <span class="name">Yin Thway Htun</span>
-            <span class="degree">(BVSc)</span>
+            <span class="name">Ma Yin Thwe Tun </span>
           </div>
         </div>
         <div class="couple-company">Sunjin Myanmar Co.,Ltd</div>
         <div class="divider"></div>
         <p class="tagline">We're getting married</p>
-        <p class="date">12-02-2026 (Friday)</p>
+        <p class="date">22.2.26 (Sunday)</p>
       </div>
     </section>
 
@@ -29,7 +27,7 @@
         <h2 class="section-title">ဖိတ်ကြားလွှာ</h2>
         <p class="section-subtitle">Invitation Card</p>
         <div class="invitation-card">
-          <img src="/image/4.jpg" alt="Myanmar Wedding Invitation Card" />
+          <img src="/image/w01.jpg" alt="Myanmar Wedding Invitation Card" />
         </div>
       </div>
     </section>
@@ -45,8 +43,8 @@
             <div class="event-icon">📅</div>
             <div class="event-info">
               <h3>ရက်စွဲ</h3>
-              <p>၁၃၈၅-ခု၊ တပို့တွဲလပြည့်ကျော်(၁၁)ရက်</p>
-              <p>12-02-2026 (ကြာသပတေးနေ့)</p>
+              <p>၁၃၈၇-ခု၊ တပေါင်းလဆန်း (7)ရက်</p>
+              <p>၂၂-၂-၂၀၂၆ (တနင်္ဂနွေနေ့)</p>
             </div>
           </div>
 
@@ -54,7 +52,7 @@
             <div class="event-icon">🕐</div>
             <div class="event-info">
               <h3>အချိန်</h3>
-              <p>နံနက် (၇:၀၀) နာရီမှ (၁၀:၀၀) နာရီထိ</p>
+              <p>နံနက် (၈:၀၀) နာရီမှ (၁၂:၀၀) နာရီထိ</p>
             </div>
           </div>
 
@@ -62,16 +60,16 @@
             <div class="event-icon">📍</div>
             <div class="event-info">
               <h3>နေရာ</h3>
-              <p>မုံရွာမြို့၊ ချမ်းမြဝတီရပ်ကွက်၊</p>
-              <p>ဗန္ဓုလလမ်း (ဆည်မြောင်ရုံးလမ်း) နှင့် အနော်ရထားလမ်း (ရေကူးကန်လမ်း) ထောင့်၊</p>
-              <p>ဗိုလ်မှူးသန်းမြင့် (ငြိမ်း) နေအိမ်</p>
+              <p>မဟာဝိဇိတာရုံကျောင်းတိုက်၊၆၈လမ်း/၃၁*၃၂လမ်းကြား
+                </p>
+              <p>ချမ်းအေးသာဇံမြို့နယ်၊မန္တလေးမြို့</p>
             </div>
           </div>
         </div>
 
         <div class="event-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59914.23376991547!2d95.10697379260115!3d22.106599035298093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ca98d563cb266b%3A0x56b860fde1c4e9ca!2sMonywa%2C%20Myanmar%20(Burma)!5e1!3m2!1sen!2ssg!4v1770215373834!5m2!1sen!2ssg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.1592581077443!2d96.10395659999999!3d21.9736384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d0436da9465%3A0xc410cb2e3914ef85!2sMaha%20Wizidaryone%20Monastery!5e1!3m2!1sen!2smm!4v1770255326004!5m2!1sen!2smm"
             width="100%"
             height="300"
             style="border:0;"
